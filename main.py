@@ -23,7 +23,7 @@ class UserMessage(BaseModel):
 def read_root():
     return {"message": "Welcome to FastAPI with Rasa!"}
 
-@app.post("/chat/", summary="Kirim pesan ke Rasa", response_description="Respons dari Rasa")
+@app.post("/chat", summary="Kirim pesan ke Rasa", response_description="Respons dari Rasa")
 def chat_with_rasa(user_message: UserMessage):
     """
     Kirim pesan ke Rasa dan kembalikan respons chatbot-nya.
