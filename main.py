@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
-RASA_URL = "https://fb98-103-86-153-67.ngrok-free.app/webhooks/rest/webhook" 
+RASA_URL = "chatbot-engine-production.up.railway.app/webhooks/rest/webhook" 
 # 🎯 Model untuk request body
 class UserMessage(BaseModel):
     message: str
