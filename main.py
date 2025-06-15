@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
-RASA_URL = "https://26c3-111-94-130-190.ngrok-free.app/webhooks/rest/webhook"
+RASA_URL = "https://7fb9-103-136-59-151.ngrok-free.app/webhooks/rest/webhook"
 # 🎯 Model untuk request body
 class UserMessage(BaseModel):
     message: str
